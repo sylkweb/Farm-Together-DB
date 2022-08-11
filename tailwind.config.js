@@ -6,6 +6,9 @@ module.exports = {
       fontFamily:{
         'sans': ['"Montserrat"', 'sans-serif'],
         'mulish':['Mulish']
+      },
+      colors:{
+        'discord': '#7289da',
       }
     },
   },
