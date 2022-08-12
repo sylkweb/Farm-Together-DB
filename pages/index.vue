@@ -1,7 +1,6 @@
 <template>
-  <div class="text-4xl">
-    <font-awesome-icon :icon="['fab', 'github']"/>
-    <NuxtLink to="/guides/test">link</NuxtLink>
+  <div class="">
+    <h1>Farm Together DB</h1>
   </div>
 </template>
 

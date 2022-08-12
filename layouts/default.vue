@@ -14,7 +14,7 @@ export default {
 <template>
     <div>
         <Navbar />
-        <Nuxt />
+        <Nuxt class="max-w-7xl mx-auto" />
         <Footer />
     </div>
 </template>
