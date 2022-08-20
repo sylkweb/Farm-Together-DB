@@ -11,8 +11,7 @@ module.exports = {
         'mulish':['Mulish']
       },
       width:{
-        '124': '32rem',
-        '160': '40rem',
+        '192': '48rem',
       },
       keyframes:{
         'up-down': {
@@ -29,7 +28,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require('@tailwindcss/line-clamp'),],
   daisyui: {
     themes: ["garden", "forest"],
   },

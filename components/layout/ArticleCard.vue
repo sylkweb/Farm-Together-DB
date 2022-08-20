@@ -6,20 +6,64 @@ Author : Eric Weng
 <script>
 export default {
   name: "ArticleCard",
+  props: {
+    hero: String,
+    path: String,
+    title: String,
+    updatedAt: String,
+  },
+  computed: {
+    updatedDate() {
+      const date = new Date(this.updatedAt);
+      return date.toLocaleString().split(",")[0];
+    },
+  },
 };
 </script>
 
 <template>
-    <div class="flex flex-row ">
-        <!-- Image Component -->
-        <div class="w-160 h-96 overflow-hidden rounded-md z-10">
-            <img src="https://i.imgur.com/EIwOwvr.jpeg" alt="" class="transition-transform ease-in-out duration-300 hover:scale-110">
+  <NuxtLink
+    class="group relative flex w-192 h-72 rounded-md overflow-hidden"
+    :to="path"
+  >
+    <!-- Hero Image -->
+    <img
+      class="
+        absolute
+        w-full
+        bg-center bg-contain
+        -z-20
+        duration-300
+        transition-transform
+        group-hover:scale-110
+      "
+      :src="hero"
+      alt=""
+    />
+    <div class="absolute w-full h-full bg-black opacity-40 -z-10"></div>
+
+    <!-- Card Content -->
+    <div class="flex flex-col justify-between w-full drop-shadow-md">
+      <!-- Top Row (Title, Time to Read)-->
+      <div class="mx-6 mt-4">
+        <h2 class="text-3xl font-semibold text-secondary">{{ title }}</h2>
+      </div>
+      <!-- Bottom Row (Last Updated, Tags, CTA)-->
+      <div class="flex flex-row justify-between mx-6 mb-4 text-neutral-content">
+        <!-- Date -->
+        <div class="flex flex-row items-center">
+          <font-awesome-icon class="text-lg pr-2" :icon="['far', 'clock']" />
+          <p>{{ updatedDate }}</p>
         </div>
-        <!-- Article Info -->
-        <div class="w-124 h-96 rounded-md bg-red-300 outline outline-1 outline-neutral -translate-x-6 translate-y-6">
-            <h2 class="my-6 mx-10 text-3xl">A Title Goes Here</h2>
-            <h3 class="my-6 mx-10 text-xl">A Subtitle Goes Here That Might Be Longer</h3>
-            <p class="my-6 mx-10"/>Lorem Ipsum My dipsum the Lump Sum of Rump Stumps innit With a COol Title and A cool Thing</p>
+        <!-- CTA -->
+        <div class="flex flex-row items-center">
+          <span class="font-medium text-lg">READ</span>
+          <font-awesome-icon
+            class="text-lg pl-2"
+            :icon="['fa', 'arrow-right']"
+          />
         </div>
+      </div>
     </div>
+  </NuxtLink>
 </template>
