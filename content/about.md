@@ -3,7 +3,7 @@ title: About
 description: About Farm Together DB
 ---
 # About
-I normally don't play casual games, so I was pretty astonished when I found myself glued to my tractor farming fields of black goji berries for hours on end with my girlfriend. It was probably around the 20-hour mark that I realized that I was addicted to Farm Together! 
+I normally don't play casual games, so I was pretty astonished when I found myself glued to my tractor farming fields of black goji berries for hours on end with my girlfriend. It was probably around the 20-hour mark that I realized that I was helplessly addicted to Farm Together. 
 
 As the hours of plowing, sowing, watering, and harvesting ticked by, I had a feeling that I was most likely not optimizing for profit... and the more I played, the less satisfied I felt. So down the developer rabbit hole I went. 
 
