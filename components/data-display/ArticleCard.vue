@@ -53,7 +53,7 @@ export default {
         <!-- Date -->
         <div class="flex flex-row items-center">
           <font-awesome-icon class="text-lg pr-2" :icon="['far', 'clock']" />
-          <p>{{ updatedDate }}</p>
+          <time>{{ updatedDate }}</time>
         </div>
         <!-- CTA -->
         <div class="flex flex-row items-center">

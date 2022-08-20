@@ -1,6 +1,6 @@
 <script>
-import ArticleCard from "~/components/layout/ArticleCard.vue";
-import PopularCard from "~/components/layout/PopularCard.vue";
+import ArticleCard from "~/components/data-display/ArticleCard.vue";
+import PopularCard from "~/components/data-display/PopularCard.vue";
 
 export default {
   name: "IndexPage",

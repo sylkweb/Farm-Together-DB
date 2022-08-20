@@ -60,7 +60,7 @@ export default {
   // Font Awesome Config: https://github.com/nuxt-community/fontawesome-module
   fontawesome: {
     icons: {
-      solid:['faArrowRight'],
+      solid:['faArrowRight', 'faCheck', 'faHammer'],
       regular:['faClock'],
       brands: ['faDiscord', 'faGithub'],
     }
