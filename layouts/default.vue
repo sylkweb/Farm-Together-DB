@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="flex flex-col min-h-screen">
         <Navbar />
-        <Nuxt class="max-w-7xl mx-auto" />
+        <Nuxt class="w-screen max-w-7xl mx-auto flex-1" />
         <Footer />
     </div>
 </template>
