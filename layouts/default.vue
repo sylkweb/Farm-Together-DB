@@ -1,6 +1,6 @@
 <script>
-import Navbar from '~/components/layout/Navbar.vue'
-import Footer from '~/components/layout/Footer.vue'
+import Navbar from '~/components/navigation/Navbar.vue'
+import Footer from '~/components/navigation/Footer.vue'
 
 export default {
   components: {
@@ -14,7 +14,7 @@ export default {
 <template>
     <div>
         <Navbar />
-        <Nuxt />
+        <Nuxt class="max-w-7xl mx-auto" />
         <Footer />
     </div>
 </template>
