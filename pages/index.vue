@@ -1,15 +1,17 @@
 <script>
 import ArticleCard from "~/components/data-display/ArticleCard.vue";
 import PopularCard from "~/components/data-display/PopularCard.vue";
+import IndexNavCard from "~/components/navigation/IndexNavCard.vue";
 
 export default {
   name: "IndexPage",
   components: {
     ArticleCard,
     PopularCard,
+    IndexNavCard,
   },
   async asyncData({ $content }) {
-    const articles = await $content("guides").fetch();
+    const articles = await $content("guides").sortBy('date','desc').fetch();
     return {
       articles,
     };
@@ -26,21 +28,16 @@ export default {
       </h1>
     </div>
     <!-- Quick Links -->
-    <div
-      class="mx-20 grid grid-cols-3 grid-rows-2 gap-y-8 justify-items-center"
-    >
-      <div class="w-40 h-40 bg-red-500 hover:animate-slide"></div>
-      <div class="w-40 h-40 bg-red-500 hover:animate-slide"></div>
-      <div class="w-40 h-40 bg-red-500 hover:animate-slide"></div>
-      <div>Guides</div>
-      <div>Calculators</div>
-      <div>Tools</div>
+    <div class="flex mx-4 mb-8 flex-row justify-between justify-items-center lg:mx-20 lg:mb-28">
+      <IndexNavCard img="Guide.svg" title="Guides" to="/Guides" />
+      <IndexNavCard img="Calculator.svg" title="Calculators" to="/Calculators"/>
+      <IndexNavCard img="Tool.svg" title="Tools" to="/Tools" />
     </div>
     <!-- Recent and Popular Articles-->
     <div class="flex flex-row justify-around">
       <!-- Recent Articles -->
       <div>
-        <div class="text-2xl font-medium mb-6">Recently Updated</div>
+        <div class="text-2xl font-medium mb-6 drop-shadow-lg">Recently Updated</div>
         <div v-for="article in articles" :key="article.id">
           <ArticleCard
             class="mb-8"
@@ -53,7 +50,7 @@ export default {
       </div>
       <!-- Popular Articles -->
       <div>
-        <div class="text-2xl mb-6">Popular</div>
+        <div class="text-2xl mb-6 drop-shadow-lg">Popular</div>
         <div v-for="article in articles" :key="article.id">
           <PopularCard
             class="mb-4"
@@ -66,3 +63,4 @@ export default {
     </div>
   </div>
 </template>
+
