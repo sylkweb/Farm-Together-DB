@@ -45,7 +45,7 @@ export default {
               w-52
             "
           >
-            <li><a>Tools</a></li>
+            <li><NuxtLink to="/Construction">Tools</NuxtLink></li>
             <li tabindex="0">
               <a class="justify-between">
                 Tools
@@ -62,8 +62,8 @@ export default {
                 </svg>
               </a>
               <ul class="bg-base-100 ml-3 p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><NuxtLink to="/Construction">Submenu 1</Nuxtlink></li>
+                <li><NuxtLink to="/Construction">Submenu 2</NuxtLink></li>
               </ul>
             </li>
             <li><NuxtLink to="/about">About</NuxtLink></li>
@@ -77,9 +77,9 @@ export default {
         <!-- Navigation Items -->
         <div class="hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
-            <li><a>Item 1</a></li>
+            <li><NuxtLink to="/Construction">Item 1</NuxtLink></li>
             <li tabindex="0">
-              <a>
+              <NuxtLink to="/Construction">
                 Tools
                 <svg
                   class="fill-current"
@@ -92,10 +92,10 @@ export default {
                     d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
                   />
                 </svg>
-              </a>
+              </NuxtLink>
               <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><NuxtLink to="/Construction">Submenu 1</NuxtLink></li>
+                <li><NuxtLink to="/Construction">Submenu 2</NuxtLink></li>
               </ul>
             </li>
             <li><NuxtLink to="/about">About</NuxtLink></li>

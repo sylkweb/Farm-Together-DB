@@ -28,11 +28,11 @@ export default {
       <div class="flex flex-col justify-center align-center text-center">
         <h1 class="mb-2 font-bold text-3xl text-primary md:text-8xl">Oops!</h1>
         <h2 class="font-medium text-xl md:text-3xl">
-          Something went wrong! This seems to be the line for the bathroom. Not much farming to do here...
+          Something went wrong! Well at least it's peaceful here. Unfortunately, not much farming to do here...
         </h2>
         <img
           class="max-w-screen mx-auto my-10"
-          src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/32023457/614b353ac7ecc5354eeddea30be7548987106918.gif"
+          src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/32023457/67bbf5ebd5f974d4fa7553518faae2b0b8944835.gif"
           alt="404 chickens"
         />
         <h3 class="text-lg md:text-2xl">Back to the lettuce fields!</h3>

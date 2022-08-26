@@ -30,8 +30,8 @@ export default {
     <!-- Quick Links -->
     <div class="flex mb-12 flex-row justify-around justify-items-center lg:mb-20 xl:mb-28">
       <IndexNavCard img="Guide.svg" title="Guides" to="/Guides" />
-      <IndexNavCard img="Calculator.svg" title="Calculators" to="/Calculators"/>
-      <IndexNavCard img="Tool.svg" title="Tools" to="/Tools" />
+      <IndexNavCard img="Calculator.svg" title="Calculators" to="/Construction"/>
+      <IndexNavCard img="Tool.svg" title="Tools" to="/Construction" />
     </div>
     <!-- Recent and Popular Articles-->
     <div class="flex flex-row justify-around">
