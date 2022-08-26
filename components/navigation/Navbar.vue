@@ -66,11 +66,11 @@ export default {
                 <li><a>Submenu 2</a></li>
               </ul>
             </li>
-            <li><a>Item 3</a></li>
+            <li><NuxtLink to="/about">About</NuxtLink></li>
           </ul>
         </div>
         <!-- Title/Logo -->
-        <NuxtLink to="/" class="btn btn-ghost normal-case text-2xl font-medium"><span class="text-primary">FarmTogether</span>DB</NuxtLink>
+        <NuxtLink to="/" class="btn btn-ghost normal-case text-xl font-medium md:text-2xl"><span class="text-primary">FarmTogether</span>DB</NuxtLink>
       </div>
       <!-- Navbar End -->
       <div class="navbar-end">
@@ -103,13 +103,13 @@ export default {
         </div>
         <!-- Social Icons -->
         <div class="menu menu-horizontal">
-            <a href="https://www.buymeacoffee.com/EricWeng">
+            <a href="https://www.buymeacoffee.com/EricWeng" aria-label="Link to the Developer's Donation Page">
                 <div class="text-2xl p-1 transition-transform hover:scale-125">🍕</div>
             </a>
-            <a href="/">
+            <a href="https://discord.com/invite/79yn8nrFNA" aria-label="Link to FarmTogetherDB Discord">
                 <font-awesome-icon class="text-2xl p-2 text-discord transition-transform hover:scale-125" :icon="['fab', 'discord']"/>
             </a>
-            <a href="https://github.com/sylkweb/farm-together-db">
+            <a href="https://github.com/sylkweb/farm-together-db" aria-label="Link to FarmTogetherDB Github">
                 <font-awesome-icon class="hidden text-2xl p-2 transition-transform lg:block hover:scale-125" :icon="['fab', 'github']"/>
             </a>
         </div>

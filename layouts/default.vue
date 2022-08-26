@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="flex flex-col min-h-screen">
     <Navbar />
-    <Nuxt class="w-screen max-w-7xl mx-auto flex-1" />
+    <Nuxt class="max-w-xs flex-1 mx-auto w-screen sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl" />
     <Footer />
   </div>
 </template>

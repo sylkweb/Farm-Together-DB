@@ -19,8 +19,8 @@ export default {
     <img
       :src="require(`~/static/${img}`)"
       :alt="`Link to Farm Together ${title} Button`"
-      class="w-56 group-hover:animate-slide drop-shadow-lg"
+      class="w-24 group-hover:animate-slide drop-shadow-lg md:w-48 lg:w-52 xl:w-56"
     />
-    <div class="mx-auto mt-6 font-medium text-lg text-center drop-shadow-lg group-hover:text-primary">{{title}}</div>
+    <div class="mt-4 font-medium text-center drop-shadow-lg md:mt-6 md:text-lg group-hover:text-primary">{{title}}</div>
   </NuxtLink>
 </template>

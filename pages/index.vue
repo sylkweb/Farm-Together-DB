@@ -22,13 +22,13 @@ export default {
 <template>
   <div>
     <!-- Site Title -->
-    <div class="flex justify-center my-16">
-      <h1 class="text-5xl font-semibold">
+    <div class="flex justify-center my-8 md:my-16">
+      <h1 class="hidden font-semibold md:block md:text-5xl">
         <span class="text-primary">FarmTogether</span>DB
       </h1>
     </div>
     <!-- Quick Links -->
-    <div class="flex mx-4 mb-8 flex-row justify-between justify-items-center lg:mx-20 lg:mb-28">
+    <div class="flex mb-12 flex-row justify-around justify-items-center lg:mb-20 xl:mb-28">
       <IndexNavCard img="Guide.svg" title="Guides" to="/Guides" />
       <IndexNavCard img="Calculator.svg" title="Calculators" to="/Calculators"/>
       <IndexNavCard img="Tool.svg" title="Tools" to="/Tools" />
@@ -37,7 +37,7 @@ export default {
     <div class="flex flex-row justify-around">
       <!-- Recent Articles -->
       <div>
-        <div class="text-2xl font-medium mb-6 drop-shadow-lg">Recently Updated</div>
+        <div class="text-center text-2xl font-medium mb-6 drop-shadow-lg md:text-left">Recently Updated</div>
         <div v-for="article in articles" :key="article.id">
           <ArticleCard
             class="mb-8"
@@ -49,8 +49,8 @@ export default {
         </div>
       </div>
       <!-- Popular Articles -->
-      <div>
-        <div class="text-2xl mb-6 drop-shadow-lg">Popular</div>
+      <div class="hidden md:block">
+        <div class=" text-2xl mb-6 drop-shadow-lg">Popular</div>
         <div v-for="article in articles" :key="article.id">
           <PopularCard
             class="mb-4"
