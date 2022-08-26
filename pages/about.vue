@@ -16,8 +16,8 @@ export default {
 </script>
 
 <template>
-  <article class="prose">
-    <img class="w-52 mt-20 float-right" src="~/static/FTProfile.webp" alt="Hi_I'm_Cim Farm Together Avatar"/>
+  <article class="w-auto prose">
+    <img class="hidden w-52 mt-20 float-right md:block" src="~/static/FTProfile.webp" alt="Hi_I'm_Cim Farm Together Avatar"/>
     <nuxt-content :document="aboutPage" />
     <Roadmap class="mx-4"/>
   </article>

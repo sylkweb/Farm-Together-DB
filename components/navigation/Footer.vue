@@ -20,16 +20,16 @@ export default {
     </div>
     <!-- Social Icons -->
     <div class="grid-flow-col gap-4 justify-self-center items-center md:place-self-center md:justify-self-end">
-      <a href="https://www.buymeacoffee.com/EricWeng">
+      <a href="https://www.buymeacoffee.com/EricWeng" aria-label="Link to the Developer's Donation Page">
         <div class="text-2xl transition-transform hover:scale-125">🍕</div>
       </a>
-      <a href="/">
+      <a href="https://discord.com/invite/79yn8nrFNA" aria-label="Link to FarmTogetherDB Discord">
         <font-awesome-icon
           class="text-2xl text-discord transition-transform hover:scale-125"
           :icon="['fab', 'discord']"
         />
       </a>
-      <a href="https://github.com/sylkweb/farm-together-db">
+      <a href="https://github.com/sylkweb/farm-together-db" aria-label="Link to FarmTogetherDB Github">
         <font-awesome-icon
           class="text-2xl transition-transform hover:scale-125"
           :icon="['fab', 'github']"

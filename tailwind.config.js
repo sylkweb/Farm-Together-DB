@@ -11,6 +11,7 @@ module.exports = {
         'mulish':['Mulish']
       },
       width:{
+        '112': '28rem',
         '192': '48rem',
       },
       keyframes:{

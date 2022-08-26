@@ -18,7 +18,7 @@ export default {
           src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/32023457/c2e78d37724ce58216740c9cd8cb7d959d10a504.gif"
           alt="404 chickens"
         />
-        <h3 class="text-lg md:text-2xl">⛽Fill up your tractor and</h3>
+        <h3 class="text-lg md:text-2xl">⛽ Fill up your tractor and</h3>
         <NuxtLink class="my-6" to="/">
             <button class="btn btn-lg btn-outline btn-primary">Head Home!</button>
         </NuxtLink>

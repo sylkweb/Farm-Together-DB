@@ -23,7 +23,7 @@ export default {
 
 <template>
   <NuxtLink
-    class="group relative flex w-192 h-72 rounded-md overflow-hidden"
+    class="group relative flex w-72 h-36 rounded-md overflow-hidden md:w-96 md:h-44 lg:w-112 lg:h-52 xl:w-192 xl:h-72"
     :to="path"
   >
     <!-- Hero Image -->
@@ -46,7 +46,7 @@ export default {
     <div class="flex flex-col justify-between w-full drop-shadow-md">
       <!-- Top Row (Title, Time to Read)-->
       <div class="mx-6 mt-4">
-        <h2 class="text-3xl font-semibold text-secondary">{{ title }}</h2>
+        <h2 class="text-lg font-semibold text-secondary line-clamp-3 md:text-2xl lg:text-3xl">{{ title }}</h2>
       </div>
       <!-- Bottom Row (Last Updated, Tags, CTA)-->
       <div class="flex flex-row justify-between mx-6 mb-4 text-neutral-content">
