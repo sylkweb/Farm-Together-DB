@@ -50,7 +50,7 @@ export default {
       </div>
       <!-- Popular Articles -->
       <div class="hidden md:block">
-        <div class=" text-2xl mb-6 drop-shadow-lg">Popular</div>
+        <div class="text-2xl mb-6 drop-shadow-lg">Popular</div>
         <div v-for="article in articles" :key="article.id">
           <PopularCard
             class="mb-4"
