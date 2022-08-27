@@ -10,12 +10,12 @@ export default {
     PopularCard,
     IndexNavCard,
   },
-  async asyncData({ $content }) {
-    const articles = await $content("guides").sortBy('date','desc').fetch();
-    return {
-      articles,
-    };
-  },
+  // async asyncData({ $content }) {
+  //   const articles = await $content("guides").sortBy('date','desc').fetch();
+  //   return {
+  //     articles,
+  //   };
+  // },
 };
 </script>
 
@@ -38,7 +38,7 @@ export default {
       <!-- Recent Articles -->
       <div>
         <div class="text-center text-2xl font-medium mb-6 drop-shadow-lg md:text-left">Recently Updated</div>
-        <div v-for="article in articles" :key="article.id">
+        <!-- <div v-for="article in articles" :key="article.id">
           <ArticleCard
             class="mb-8"
             :hero="article.image"
@@ -46,19 +46,19 @@ export default {
             :title="article.title"
             :updatedAt="article.updatedAt"
           />
-        </div>
+        </div> -->
       </div>
       <!-- Popular Articles -->
       <div class="hidden md:block">
         <div class="text-2xl mb-6 drop-shadow-lg">Popular</div>
-        <div v-for="article in articles" :key="article.id">
+        <!-- <div v-for="article in articles" :key="article.id">
           <PopularCard
             class="mb-4"
             :hero="article.image"
             :path="article.path"
             :title="article.title"
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
