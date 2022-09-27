@@ -1,6 +1,19 @@
 <script>
+import GuideCard from "~/components/data-display/GuideCard.vue";
+
 export default {
   name: "Guides",
+  components: {
+    GuideCard,
+  },
+  async asyncData({ $content }) {
+    const test1 = await $content("guides")
+      .where({ tags: { $containsAny: ["test1"] } })
+      .fetch();
+    return {
+      test1,
+    };
+  },
 };
 </script>
 
@@ -16,29 +29,19 @@ export default {
 
     <!-- Guide Category -->
     <div>
-      <h2>Section Title</h2>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="justify-between h-32 bg-base-100 border-secondary-focus border-2 rounded-md transition-all hover:drop-shadow-lg hover:-translate-y-1">
-          <div class="flex flex-row w-full h-full">
-            <!-- Article Info -->
-            <div class="flex flex-col">
-              <h3 class="font-semibold text-primary text-xl">
-                This 
-              </h3>
-              <p>This is</p>
-            </div>
-            <!-- Article Image -->
-            <div class="my-auto mx-auto">
-              <div class="avatar">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="https://placeimg.com/192/192/people" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="h-32 bg-red-500"></div>
-        <div class="h-32 bg-red-500"></div>
+      <h2 class="font-bold text-3xl mb-8">Profit Guides</h2>
+      <div
+        v-for="guide in test1"
+        :key="guide.id"
+        class="grid grid-cols-3 gap-4"
+      >
+        <GuideCard
+          :title="guide.title"
+          :description="guide.description"
+          :hero="guide.image"
+          :heroAlt="guide.alt"
+          :path="guide.slug"
+        />
       </div>
     </div>
   </div>

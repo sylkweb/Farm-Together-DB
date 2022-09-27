@@ -1,6 +1,9 @@
 ---
 title: Introduction
 description: Learn how to use @nuxt/content.
+image: https://cdn.dribbble.com/users/1003944/screenshots/10412487/dribbble_angry_4x.gif?compress=1&resize=400x300
+alt: Cute pup
+tags: [test1, test2]
 ---
 
 # Welcome to StackEdit!
