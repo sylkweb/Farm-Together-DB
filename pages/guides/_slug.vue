@@ -17,6 +17,7 @@ export default {
       observer: null,
       observerOptions: {
         root: this.$refs.nuxtContent,
+        rootMargin: '0px 0px -60% 0px',
         threshold: 1.0,
       },
     };
@@ -51,17 +52,17 @@ export default {
 
 <template>
   <div class="flex flex-col">
-    <div class="relative h-64">
+    <div class="relative h-48 md:h-64">
         <img :src="page.image" :alt="page.alt" class="absolute w-full h-full object-cover"/>
         <div class="absolute w-full bottom-0 backdrop-blur-md"> 
-            <h1 class="font-bold ml-2 my-3 text-4xl">{{page.title}}</h1>
+            <h1 class="font-bold ml-2 my-3 text-2xl md:text-4xl">{{page.title}}</h1>
         </div>
     </div>
-    <div class="grid grid-cols-9 mt-5 gap-5">
+    <div class="grid grid-cols-9 mt-10 gap-5 md:mt-8">
       <!-- Sticky Side Table of Contents-->
-      <aside class="col-span-2">
+      <aside class="hidden col-span-2 md:block">
         <div class="sticky top-16">
-          <h2 class="uppercase font-medium text-xl lg:mt-16 tracking-wider">
+          <h2 class="uppercase font-medium text-xl lg:mt-12 tracking-wider">
             Table of contents
           </h2>
           <nav class="mt-4">
@@ -93,7 +94,7 @@ export default {
       </aside>
 
       <!-- Main Article -->
-      <article class="prose mt-16 col-span-7">
+      <article class="prose prose-sm col-span-9 md:col-span-7 md:prose-base lg:mt-12 xl:prose-lg">
         <nuxt-content :document="page" />
       </article>
     </div>
